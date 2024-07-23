@@ -12,15 +12,43 @@ body{
     background-color: white;
     display: inline-block;
     margin-left: 100px;
-    border-radius: 40px;
+    border-radius: 60px;
     position: relative;
 }
 
-.ball{
-    width: 100px;
-    height: 300px;
-    font-size:200px;
-    color: black;
+
+
+.ball img{
+    width: 160px;
+    height: 190px;
+    animation-name: eyeBall;
+    animation-duration: 2s;
     position: absolute;
-    top: 0;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+.ball img:hover{
+
+}
+
+@keyframes eyeBall {
+    0% {
+        transform: translate(0px,0px);
+    }
+   50% {
+    transform: translate(30px,30px);
+
+
+    }
+
+    70% {
+        transform: translate(60px,40px);
+    
+    
+        }
+
+    100% {
+        transform: translate(90px,50px);
+    }
 }
